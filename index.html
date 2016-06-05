@@ -1,16 +1,46 @@
 ---
-layout: layout
-title: Jekyll Base
+layout: home
 ---
 
-<div class="content">
-  <div class="related">
-    <ul>
-      {% for post in site.posts %}
-      <li>
-	<span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
+<section id="about">
+	<div class="container">
+	  <div class="avatar">
+		<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="Responsive image">
+	  </div>
+	  <h3>I'm <strong>{{ site.author }}</strong>, a Software Engineer.</h3>
+	  <h3>I love all things computer science and maths.</h3>
+	  <h3>Have a look at some of my working <a href="{{ site.baseurl }}/projects.html"> projects</a>.</h3>
+	  <h3>For more check out my academic &amp; professional <a href="http://biomadeira.github.io/vitae">Resume</a>.</h3>
+	  <h3>Contact me at <a href="http://twitter.com/{{ site.twitter }}">@{{ site.twitter }}</a> or by <a href="mailto:{{ site.email }}">email</a>.</h3>
+	  {% include social.html %}
+	</div>
+</section>
+
+
+<section id="about">
+	<div class="container">
+	  <div class="avatar">
+		<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="Responsive image">
+	  </div>
+
+	   <h3>I'm <strong>{{ site.author }}</strong>, a System Engineer/DevOps/Linux Sysadmin.</h3>
+
+	   <h3>Hi, all. I am a computer engineer who is living in Turkey. I am now continuing the Ph.D. degree at <a href="http://www.deu.edu.tr/deuwebv2/en/?">Dokuz Eylül University</a> <a href="http://www.cs.deu.edu.tr/">Computer Engineering Department</a>. I had worked as software engineer and software design engineer on Linux related projects.<h3>
+
+	   <h3>I do support open source and Linux usage. That's why i am a member of <a href="http://www.lkd.org.tr/about.us.php">Linux Users Group</a>. I am trying to support activities and projects related with open source. I gave seminars as a volunteer and as an invited speaker at some universities, at a Chamber of Commerce and at IBM in Turkey. The topics were related with Debian, server configuration, Python, Django, Pardus and Aikido :).</h3>
+
+	<h3>I used Debian for 3 years, translated some <a href="http://oguzy.me/translations">documents</a> to Turkish related with Debian. I made deb packages for two application. Then i tried the <a href="http://www.pardus.org.tr/">Pardus</a>, which is being developed in Turkey. I tried to give some support to them. I had developed a project using Django for the <a href="http://svn.pardus.org.tr/uludag/trunk/pijama/">package</a> site of the Pardus project. Now a days i am using Kubuntu for its wide range of packages in its repositories and my aptness to apt. Although i tried Gnome, i prefer to use KDE as a desktop environment at home. I had used Ubuntu Hardy based Ubuntu Netbook Remix for our netbook project. I also had experince with OpenSuse and MacOSX..</h3>
+
+	<h3>I had developed some softwares. Have a look at some of my working <a href="{{ site.baseurl }}/projects.html"> projects</a>. They are all developed by Python, which is my favorite programming language. I am still using this flexiable language at my master degree projects related with security issues. I am working on network security at my master degree, trying to learn more about the security related topics. Till know i had experienced with iptables, distributed firewalls, firewall configurations, socket programming with Java and Python, package based jobs with Scapy, DMZ configuration with NTP, mail, ftp and web server inside. Now a days i am working on traffic characterisation and flow attributes.</h3>
+
+	<h3>I prefer to develop my web applications using Django, which is my favorite web framework.</h3>
+
+	<h3>I like swimming, table tennis, diving, volleyball and martial arts. I had interested in Aikido for some years ago. I am also diving in an ameteur way. I like music. I like to try different types. </h3>
+
+	  <h3>For more check out my academic &amp; professional <a href="http://somelnkhere">Resume</a>.</h3>
+	  <h3>Contact me at <a href="http://twitter.com/{{ site.twitter }}">@{{ site.twitter }}</a> or by <a href="mailto:{{ site.email }}">email</a>.</h3>
+
+	  {% include social.html %}
+	</div>
+</section>
+
